@@ -1,0 +1,129 @@
+body {
+    background-image: url("../images/numerique02.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    color: lightcyan;
+    font-size: 0.5em;
+    z-index: 10;
+}
+.hline {
+    width: 50%;
+    height: 5px;
+    background-color: darkturquoise;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    animation: fadein 2s;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+a:link {
+    color: darkturquoise;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkturquoise;
+}
+
+a:active {
+    color: darkturquoise;
+}
+
+.container {
+    margin: 5% 0 0 5%;
+    font-size: 3em;
+}
+.logoin {
+    position: fixed;
+    top: 5%;
+    right: 0;
+    left: 0;
+    margin: 0 80%;
+    width: 20%;
+}
+img {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5em;
+}
+.transparence {
+    height: 1000px;
+}
+
+@media screen and (max-width: 64em) {
+    h2 {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    .container {
+        font-size: 1em;
+    }
+    img {
+        max-height: 40px;
+    }
+    .hline {
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+    .container {
+        font-size: 1.5em;
+    }
+    img {
+        max-height: 30px;
+    }
+    .hline {
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    img {
+        max-height: 20px;
+    }
+    .hline {
+        height: 1px;
+    }
+}
+
+.hline {
+    width: 50%;
+    height: 5px;
+    background-color: darkturquoise;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

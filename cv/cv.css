@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.photo {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
+
+.containerColonne {
+    padding: 60px 2rem;
+    background-color: rgb(71, 71, 71);
+    color: rgb(233, 233, 233);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    flex-direction: column;
+
+}
+
+.containerPrincipal {
+    text-align: justify;
+    padding: 20px 2rem;
+    font-size: 1.2em;
+    align-self: stretch;
+    flex-direction: column;
+
+}
+table {
+    border-collapse: separate;
+}
+td {
+    vertical-align: top;
+}
+.tableCoordonnees {
+    border-spacing: 10px 0px;
+    border-collapse: separate;
+}
+
+#entete {
+    height: 200px;
+}
+
+#nom {
+    font-size: 40px;
+}
+
+#titre {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+#experience, #formation, #divers, #profil {
+    border-top: 3px solid rgb(71, 71, 71);
+}
+
+#coordonnees, #competences {
+    border-top: 3px solid rgb(255, 255, 255);
+}
+
+.colGauche {
+    margin-left: 40px;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+}
+.linklight {
+    color: black;
+}
+
+@media screen and (max-width: 70em) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+.groscontainerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.petit1 {
+    color: red;
+}
+.petit2 {
+    color: green;
+}
+
+
+
+

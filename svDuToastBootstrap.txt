@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>mon CV</title>
+        <link href="cv.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    </head>
+
+    <body>
+        <div class=container>
+            <div class="containerColonne">
+                <div class="photo">
+                    <img src="../images/photoprofil.jpg" class="photo" alt="photo de profil" height="180px">
+                </div>
+                <div id="coordonnees">
+                    <h3>COORDONNEES</h3>
+                    <table class="tableCoordonnees">
+                        <tr>
+                            <td >In</td>
+                            <td ><a class="link" href="https://www.linkedin.com/in/guillaume-deloris-developpeur">
+                                    www.linkedin.com/in/guillaume-deloris-developpeur</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile </td>
+                            <td><b>06 63 08 39 08</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mail  </td>
+                            <td><b>guillaumedeloris@outlook.fr</b></td>
+                        </tr>
+                        <tr>
+                            <td>Tel </td>
+                            <td>09 72 57 12 35
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adr </td>
+                            <td>85 rue du Centre <br>
+                                Sainte Julie 01150<br>
+                                fibre - véhiculé
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Zone de recherche : Lyon</td>
+                        </tr>
+                    </table><br><br>
+
+                </div>
+                <div id="competences">
+                    <h3>COMPETENCES</h3>
+                    <p>
+                    <h4>Langages :</h4>
+                    <p class="colGauche">
+                        • HTML / CSS<br>
+                        • PHP POO<br>
+                        • JavaScript<br>
+
+                    </p>
+                    <h4>Framework JavaScript :</h4>
+                    <p class="colGauche">
+                        • React <br>
+                        • Node <br>
+                    </p>
+                    <h4>Mobile :</h4>
+                    <p class="colGauche">
+                        • React Native <br>
+                    </p>
+                    <h4>Bases de données :</h4>
+                    <p class="colGauche">
+                        • MySQL <br>
+                    </p>
+                    <h4>Versioning :</h4>
+                    <p class="colGauche">
+                        • Git, GitHub
+                    </p>
+                    <h4>Métdodologie :</h4>
+                    <p class="colGauche">
+                        • UML, Scrum
+                    </p>
+                    <h4>Anglais :</h4>
+                    <p class="colGauche">
+                        • Intermédiaire avancé B2 <br>
+                        • Test Bulats en 2015 et 2018
+                    </p>
+                </div>
+
+            </div>
+            <div class="containerPrincipal">
+                <div id="entete">
+                    <p id="nom">Guillaume DELORIS</p>
+                    <p id="titre">Développeur Full Stack</p>
+                    <p>site portfolio : <a class="linklight" href="https://www.guillaumedeloris.fr" target="_blank"> www.guillaumedeloris.fr</a></p>
+                </div>
+                <div id="profil">
+                    <h3>PROFIL</h3>
+                    <p>Passionné de programmation et de codage, je me suis lancé dans une carrière de développeur web en 2021. 
+                        Pour réussir ce challenge, j'ai mené une formation menant à un titre professionnel, que je complète en continu par :
+                    <ul class="colGauche">
+                        <li>des modules de formation, </li>
+                        <li>la réalisation de sites web,</li>
+                        <li>des projets portfolio.</li>
+                    </ul>
+                    Et dès à présent, je souhaite écrire mon futur en conjuguant mon métier et ma passion : la programmation.
+                </p><br>
+                </div>
+                <div id="experience">
+                    <h3>EXPERIENCES PROFESSIONNELLES</h3>
+                    <table>
+                        <tr>
+                            <td width="250px">De 1993 à 2021</td>
+                            <td>FEU VERT SAS | Saint-Vulbas 01</td>
+                        </tr>
+                        <tr>
+                            <td>De 2018 à 2021 : </td>
+                            <td>Responsable Approvisionnements et Gestion de Stock de la Plateforme et des Centres Auto
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>De 2010 à 2017 : </td>
+                            <td>Responsable Appros et Plateau d’Assistance</td>
+                        </tr>
+                        <tr>
+                            <td>De 1998 à 2010 : </td>
+                            <td>Chef d’Equipe Approvisionnement et Codification </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <h4>Réalisations spécifiques</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>En 2015 et 2017 : </td>
+                            <td>Internalisation de la hot line informatique et du Service Client</td>
+                        </tr>
+                        <tr>
+                            <td>De 2009 à 2017 : </td>
+                            <td>Création et management du Plateau d’Assistance</td>
+                        </tr>
+                        <tr>
+                            <td>En 2016 : </td>
+                            <td>Digitalisation de l’offre : chef de chantier supply et ADV</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Acteur de la mise en place de nouveaux outils : ERP plateforme, APS et ERP des centres auto, intégration et maintien du CRM Salesforce</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="formation">
+                    <h3>FORMATION</h3>
+                    <table>
+                        <tr>
+                            <td width="250px">De 06/2021 à 01/2022 : </td>
+                            <td>Formation titre professionnel de Développeur Web - Web Mobile - M2I Lyon
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>En 2005 : </td>
+                            <td>Formation Développer son assertivité - CCI de Lyon </td>
+                        </tr>
+                        <tr>
+                            <td>En 2004 : </td>
+                            <td>Formation leadership situationnel - CSP Paris</td>
+                        </tr>
+                        <tr>
+                            <td>En 1992 : </td>
+                            <td>BTS Comptabilité et Gestion</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="divers">
+                    <h3>OUTILS INFORMATIQUES</h3>
+                    <p>• Mantis, ERP GCE, APS JDA E3Trim et Telamon, SMP, MOP, Excel, QlikView, Salesforce, Octime, Sage X3
+                    </p>
+                </div>
+            </div>
+        </div>
+       <!--toast-->
+
+        <div class="toast" id="toast1" data-delay="10000"
+             style="position: absolute; top: 1rem; right: 1rem; min-width:250px;" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="mr-auto">Profil LinkedIn</strong>
+                <small>
+                    <img src="../images/logoin.png" alt="logo linkedIn" height=30px>
+                </small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fermer">
+                    <div aria-hidden="true">&times;</div>
+                </button>
+            </div>
+            <div class="toast-body">
+                <a href="https://www.linkedin.com/in/guillaume-deloris-developpeur">
+                    www.linkedin.com/in/guillaume-deloris-developpeur</a>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+                integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function () {
+                $('#toast1').toast('show');
+            })
+
+            /*ici ca fonctionne
+             $(document).ready(function(){
+             $('#toast1').toast('show');
+             });*/
+
+            //changer la couleur lors du survol - colonne de droite
+            let survol = $("#profil, #experience, #formation, #divers")
+
+            $(document).ready(function () {
+                //Lorsque la souris entre dans le div...
+                survol.mouseenter(function () {
+                    //mettre fond gris clair
+                    $(this).css("background-color", "rgb(240 ,240,240)");
+                    $(this).css("color", "#000");
+                });
+                //Lorsque la souris ressort du div...
+                survol.mouseleave(function () {
+                    //remettre fond d'origine
+                    $(this).css("background-color", "rgb(255,255,255)");
+                    $(this).css("color", "#000");
+                });
+            });
+
+            //changer la couleur lors du survol - colonne de gauche
+            let survolCol1 = $("#competences")
+
+            $(document).ready(function () {
+                //Lorsque la souris entre dans le div...
+                survolCol1.mouseenter(function () {
+                    //mettre fond gris clair
+                    //$(this).css("background-color", "rgb(240,240,240)");
+                    //$(this).css("color", "#000");
+                    //$(this).css("border-top", "3px solid rgb(71, 71, 71)");
+                    //$(this).css("font-size", "2em");
+                    $(this).css("font-weight", "bold");
+                });
+                //Lorsque la souris ressort du div...
+                survolCol1.mouseleave(function () {
+                    //remettre fond d'origine
+                    //$(this).css("background-color", "rgb(71, 71, 71)");
+                    //$(this).css("color", "#fff");
+                    //$(this).css("border-top", "3px solid rgb(250,250,250)");
+                    //$(this).css("font-size", "1.5em");
+                    $(this).css("font-weight", "normal");
+                });
+            });
+
+
+
+            let survolNom = $("#nom")
+            $(document).ready(function () {
+                //Lorsque la souris entre dans le div...
+                survolNom.mouseenter(function () {
+                    //mettre fond gris clair
+                    $(this).css("font-weight", "500");
+                    $(this).css("letter-spacing", "6px");
+                });
+                //Lorsque la souris ressort du div...
+                survolNom.mouseleave(function () {
+                    //remettre fond d'origine
+                    $(this).css("font-weight", "normal");
+                    $(this).css("letter-spacing", "4px");
+                });
+            });
+
+            //changer la couleur quand on passe la souris dans le titre 
+            let survolTitre = $("#titre")
+            $(document).ready(function () {
+                //Lorsque la souris entre dans le div...
+                survolTitre.mouseenter(function () {
+                    //mettre fond gris clair
+                    $(this).css("font-weight", "normal");
+                    $(this).css("letter-spacing", "5px");
+                    $(this).css("color", getRandomColor());
+                });
+                //Lorsque la souris ressort du div...
+                survolTitre.mouseleave(function () {
+                    //remettre fond d'origine
+                    $(this).css("font-weight", "normal");
+                    $(this).css("letter-spacing", "1px");
+                    $(this).css("color", getRandomColor());
+                });
+            });
+
+            // fonction qui génère le code couleur aléatoire
+            function getRandomColor() {
+                // #09AFF3
+                let chars = "0123456789ABCDEF";
+                let color = "#";
+
+                for (let i = 0; i <= 5; i++) {
+                    // générer un indice aléatoire entre 0 et 15
+                    let position = randomIntFromInterval(0, 15);
+                    // aller chercher le caractère correspondant
+                    let char = chars[position];
+                    // l'ajouter dans le code couleur
+                    color += char;
+                    // console.log(color);
+                }
+                return color;
+            }
+
+            function randomIntFromInterval(min, max) { // min and max included
+                return Math.floor(Math.random() * (max - min + 1) + min)
+            }
+
+        </script>
+
+    </body>
+
+</html>
+
