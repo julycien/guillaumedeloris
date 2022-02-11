@@ -96,7 +96,11 @@ td {
 .petit2 {
     color: green;
 }
-
+.colonnes {
+    columns: 4 auto;
+    column-gap: 150px;
+    text-align: left;
+}
 
 
 
