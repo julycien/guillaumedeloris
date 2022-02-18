@@ -13,18 +13,20 @@ class SiteConnexionsDAO {
     public function SelectOne($pk): SiteConnexions {
         try {
             $cursor = $this->pdo->prepare('SELECT * FROM connexions WHERE idsession = ? ORDER BY 1 DESC LIMIT 1 ');
-            $cursor->bindParam(1, $pk); 
+            $cursor->bindParam(1, $pk);
             $cursor->execute();
             $record = $cursor->fetch();
             if ($record != null) {
-                //echo "trouvé";
+
                 $siteconnexions = new SiteConnexions($record["idconnexion"], $record["idsession"], $record["datesession"], $record["adresseip"]);
             } else {
                 $siteconnexions = new SiteConnexions(0, 0, 0, 0);
-                //echo "non trouvé<br>";
             }
         } catch (PDOException $e) {
-            echo $e->getMessage();
+            $time = date("D, d M Y H:i:s");
+            $errorMessage = "\rSiteConnexionsDAO.php : " . $time . " : " . $ex->getMessage();
+            $logFile = "../log//Errors.log";
+            error_log($errorMessage, 3, $logFile);
         }
         return $siteconnexions;
     }
@@ -48,9 +50,12 @@ class SiteConnexionsDAO {
             $cmd->execute();
             // Nombre de lignes affectées (0 ou 1)
             $affected = $cmd->rowCount();
-
-        } catch (Exception $exc) {
+        } catch (Exception $ex) {
             $affected = -1;
+            $time = date("D, d M Y H:i:s");
+            $errorMessage = "\rBienvenueCTRL.php : " . $time . " : " . $ex->getMessage();
+            $logFile = "../log//Errors.log";
+            error_log($errorMessage, 3, $logFile);
         }
         return $affected;
     }
@@ -67,7 +72,10 @@ class SiteConnexionsDAO {
             //$cursor->close();
         } catch (Exception $ex) {
             $tSiteConnexions[] = new Admin("-1", $ex->getMessage());
-            echo "KOOOO";
+            $time = date("D, d M Y H:i:s");
+            $errorMessage = "\rBienvenueCTRL.php : " . $time . " : " . $ex->getMessage();
+            $logFile = "../log//Errors.log";
+            error_log($errorMessage, 3, $logFile);
         }
         return $tSiteConnexions;
     }
@@ -76,8 +84,4 @@ class SiteConnexionsDAO {
         
     }
 
-  
-    }
-
-   
-
+}
