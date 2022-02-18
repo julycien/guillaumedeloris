@@ -35,6 +35,10 @@ if ($p->getIdSession() == 0) {
     $dt->setTimestamp($timestamp); //adjust the object to correct timestamp
     $datesession = $dt->format('Y-m-d H:i:s');
     $adresseIP = getIp();
+    
+    if ($adresseIP == "185.73.235.212") {
+        $adresseIP = "moi-meme";
+    };
 
     try {
         $tx = new Transaxion();
