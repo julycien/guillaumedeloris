@@ -16,7 +16,9 @@ function getIp() {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
     return $ip;
-};
+}
+
+;
 
 
 
@@ -47,29 +49,29 @@ if ($p->getIdSession() == 0) {
     $datesession = $dt->format('Y-m-d H:i:s');
     $adresseIP = getIp();
 
-    if ($adresseIP == "185.73.235.212") {
-        $adresseIP = "moi-meme";
-    } else {
+    if ($adresseIP != "185.73.235.212") {
+
         $adresseIP = substr(md5($adresseIP), 0, 20);
+
+
+        try {
+            $tx = new Transaxion();
+            $tx->initialiser($pdo);
+            $pdo->exec("SET NAMES 'UTF8'");
+
+            $siteconnexions = new SiteConnexions($idconnexion, $idsession, $datesession, $adresseIP);
+
+            $dao = new SiteConnexionsDAO($pdo);
+            $affected = $dao->insert($siteconnexions);
+
+            $tx->valider($pdo);
+        } catch (PDOException $ex) {
+            $time = date("D, d M Y H:i:s");
+            $errorMessage = "\rBienvenueCTRL.php : " . $time . " : " . $ex->getMessage();
+            $logFile = "../log//Errors.log";
+            error_log($errorMessage, 3, $logFile);
+        }
     };
-
-    try {
-        $tx = new Transaxion();
-        $tx->initialiser($pdo);
-        $pdo->exec("SET NAMES 'UTF8'");
-
-        $siteconnexions = new SiteConnexions($idconnexion, $idsession, $datesession, $adresseIP);
-
-        $dao = new SiteConnexionsDAO($pdo);
-        $affected = $dao->insert($siteconnexions);
-
-        $tx->valider($pdo);
-    } catch (PDOException $ex) {
-        $time = date("D, d M Y H:i:s");
-        $errorMessage = "\rBienvenueCTRL.php : " . $time . " : " . $ex->getMessage();
-        $logFile = "../log//Errors.log";
-        error_log($errorMessage, 3, $logFile);
-    }
 }
 
 include '../boundaries/BienvenueIHM.php';
