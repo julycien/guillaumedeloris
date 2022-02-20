@@ -23,8 +23,8 @@
                 <p><b><i><u>Site réalisé en PHP OOP : </u></i></b></p>
                 <li><b>www.msr-bike.fr : Magasin et atelier moto </b></li>
                 <ul>
-                    <li>Front office : <a href="https://www.guillaumedeloris.fr/msrBike/boundaries/Index.php" target="blank">www.msr-bike.fr à Saint Romain de Jalionas</a></li>
-                    <li>Back office : <a href="https://www.guillaumedeloris.fr/msrBike/msrBikeAdmin/boundaries/LoginIHM.php" target="blank">www.msr-bike.fr Administrateur</a></li>
+                    <li>Front office : <a href="https://msr-bike.fr/boundaries/Index.php" target="blank">www.msr-bike.fr à Saint Romain de Jalionas</a></li>
+                    <li>Back office : <a href="https://msr-bike.fr/msrBikeAdmin/boundaries/LoginIHM.php" target="blank">www.msr-bike.fr Administrateur</a></li>
                 </ul><br>
                 Site de préproduction toujours visible à l'url suivante :<br>
                 <a href="https://julycien.alwaysdata.net/msrBike/boundaries/Index.php" target="blank">www.msr-bike.fr à Beynost</a></li>
@@ -33,10 +33,10 @@
                 <p><b><i><u>Site réalisé en PHP procédural :</u></i></b></p>
                 <li><b>Gestion d'une copropriété</b></li>
                 <ul>
-                    <li>Front office : <a href="https://guillaumedeloris.fr/CoproSainteJulie/boundaries/identificationIHM.php" target="blank">www.coprostej.fr</a></li>
-                    <li>Back office : <a href="https://guillaumedeloris.fr/CoproSainteJulie/SyndicSainteJulie/boundaries/identification.php" target="blank">www.coprostej.fr Administrateur</a></li>
+                    <li>Front office : <a href="http://www.coprostej.fr/boundaries/identificationIHM.php" target="blank">www.coprostej.fr</a></li>
+                    <li>Back office : <a href="https://www.coprostej.fr/SyndicSainteJulie/boundaries/identification.php" target="blank">www.coprostej.fr Administrateur</a></li>
                 </ul>
-                <p><b><i><u>Liens :</u></i></b></p>
+                <p><b><i><u>Liens:</u></i></b></p>
                 <li><a href="../cv/cv.html" target="blank">Mon CV</a></li>
                 <li><a href="https://github.com/julycien" target="blank">Extraits de codage sur Github</a></li>
             </ul>
