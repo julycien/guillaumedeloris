@@ -11,14 +11,24 @@ $cnx = new Connexion();
 $pdo = $cnx->seConnecter("../conf/bd.ini");
 $dao = new SiteConnexionsDAO($pdo);
 
+
 echo "<hr>select all<hr>";
+
+try {
     $p = $dao->selectAll();
 
     foreach ($p as $object) {
-    echo $p->getIdConnexion() . "<br>";
-    echo $p->getIdSession() . "<br>";
-    echo $p->getDateSession() . "<br>";
-    echo $p->getIdentifiantAdmin() . "<br>";
-    }
+    echo $object->getIdConnexion() . "<br>";
+    echo $object->getIdSession() . "<br>";
+    echo $object->getDateSession() . "<br>";
+    echo $object->getAdresseIp() . "<br>";
+   } 
+} catch (Exception $ex) {
+    $time = date("D, d M Y H:i:s");
+    $errorMessage = "\rTdbCTRL.php : " . $time . " : " . $ex->getMessage();
+    $logFile = "../log//Errors.log";
+    error_log($errorMessage, 3, $logFile);
+}
 
+echo "<hr>select all<hr>";
 ?>

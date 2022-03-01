@@ -73,7 +73,7 @@ class SiteConnexionsDAO {
         } catch (Exception $ex) {
             $tSiteConnexions[] = new Admin("-1", $ex->getMessage());
             $time = date("D, d M Y H:i:s");
-            $errorMessage = "\rBienvenueCTRL.php : " . $time . " : " . $ex->getMessage();
+            $errorMessage = "\rTdbCTRL.php : " . $time . " : " . $ex->getMessage();
             $logFile = "../log//Errors.log";
             error_log($errorMessage, 3, $logFile);
         }

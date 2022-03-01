@@ -16,11 +16,7 @@ function getIp() {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
     return $ip;
-}
-
-;
-
-
+};
 
 try {
 
@@ -51,8 +47,7 @@ if ($p->getIdSession() == 0) {
 
     if ($adresseIP != "185.73.235.212") {
 
-        $adresseIP = substr(md5($adresseIP), 0, 20);
-
+        $adresseIP = substr(md5($adresseIP), 0, 7);
 
         try {
             $tx = new Transaxion();
